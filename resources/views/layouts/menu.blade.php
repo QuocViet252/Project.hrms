@@ -7,7 +7,7 @@
                     <img src="{{asset('project_asset/images/user.png')}}" width="48" height="48" alt="User" />
                 </div>
                 <div class="info-container">
-                    <div class="name" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{{Auth::user()->username}}</div>
+                    <div class="name" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{{Auth::user()->name}}</div>
                     <div class="email">{{Auth::user()->email}}</div>
                     <div class="btn-group user-helper-dropdown">
                         <i class="material-icons" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">keyboard_arrow_down</i>
@@ -36,15 +36,15 @@
                 <ul class="list">
                     <li class="header">MAIN NAVIGATION</li>
                     <li class="active">
-                        <a href="index.html">
+                        <a href="{{url('home')}}">
                             <i class="material-icons">home</i>
-                            <span>Home</span>
+                            <span>Trang Chủ</span>
                         </a>
                     </li>
                     <li>
-                        <a href="pages/typography.html">
-                            <i class="material-icons">text_fields</i>
-                            <span>Typography</span>
+                        <a href="{{url('phongban')}}">
+                            <i class="material-icons">supervisor_account</i>
+                            <span>Phòng Ban</span>
                         </a>
                     </li>
                     <li>

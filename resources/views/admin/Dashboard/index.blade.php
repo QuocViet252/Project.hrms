@@ -1,7 +1,5 @@
 @extends('layouts.master')
-@section('title')
-Welcome To | Bootstrap Based Admin Template - Material Design
-@endsection
+
 @section('css')
 <link href="{{asset('project_asset/plugins/bootstrap/css/bootstrap.css')}}" rel="stylesheet">
 

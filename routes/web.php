@@ -20,3 +20,11 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+Route::get('/phongban','PhongBan\PhongbanController@index');
+Route::get('/phongban/them','Phongban\PhongbanController@getThem');
+Route::post('/phongban/them','Phongban\PhongbanController@postThem');
+Route::get('/phongban/xoa/{id}','Phongban\PhongbanController@delete');
+Route::get('/phongban/sua/{id}','Phongban\PhongbanController@getSua');
+Route::post('/phongban/sua/{id}','Phongban\PhongbanController@postSua');
+
