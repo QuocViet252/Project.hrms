@@ -15,7 +15,7 @@ use Illuminate\Support\Facades\Auth;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('auth.login');
 });
 
 Route::get('logout', '\App\Http\Controllers\Auth\LoginController@logout');
@@ -24,6 +24,7 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 Route::get('/phongban','PhongBan\PhongbanController@index');
 Route::get('/phongban/them','Phongban\PhongbanController@getThem');
@@ -40,3 +41,21 @@ Route::get('nhansu/{id}/edit', 'Quanly\QuanlyNhansuController@edit')->name('nhan
 Route::post('nhansu/update/{id}', 'Quanly\QuanlyNhansuController@update')->name('nhansuUpdate');
 Route::get('nhansu/{id}/delete', 'Quanly\QuanlyNhansuController@destroy')->name('nhansuDelete'); 
 >>>>>>> origin/nhansu
+=======
+//branch
+Route::get('/branch', 'Branch\BranchController@index')->name('Branch');
+
+Route::get('/add-branch', 'Branch\BranchController@create')->name('Branch');
+Route::post('/add-branch', 'Branch\BranchController@store')->name('Branch');
+
+Route::get('/delete/{id}', 'Branch\BranchController@destroy')->name('delete');
+
+Route::get('/update/{id}', 'Branch\BranchController@edit')->name('update');
+Route::post('/update/{id}', 'Branch\BranchController@update')->name('update');
+
+//branch_employee
+Route::get('/branch-employee', 'Branch\BranchEmployeeController@index')->name('Branch');
+
+
+
+>>>>>>> origin/create_chinhanh

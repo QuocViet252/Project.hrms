@@ -14,6 +14,8 @@ return array(
     'App\\Http\\Controllers\\Auth\\RegisterController' => $baseDir . '/app/Http/Controllers/Auth/RegisterController.php',
     'App\\Http\\Controllers\\Auth\\ResetPasswordController' => $baseDir . '/app/Http/Controllers/Auth/ResetPasswordController.php',
     'App\\Http\\Controllers\\Auth\\VerificationController' => $baseDir . '/app/Http/Controllers/Auth/VerificationController.php',
+    'App\\Http\\Controllers\\Branch\\BranchController' => $baseDir . '/app/Http/Controllers/Branch/BranchController.php',
+    'App\\Http\\Controllers\\Branch\\BranchEmployeeController' => $baseDir . '/app/Http/Controllers/Branch/BranchEmployeeController.php',
     'App\\Http\\Controllers\\Controller' => $baseDir . '/app/Http/Controllers/Controller.php',
     'App\\Http\\Controllers\\HomeController' => $baseDir . '/app/Http/Controllers/HomeController.php',
 <<<<<<< HEAD
@@ -30,7 +32,11 @@ return array(
     'App\\Http\\Middleware\\TrustHosts' => $baseDir . '/app/Http/Middleware/TrustHosts.php',
     'App\\Http\\Middleware\\TrustProxies' => $baseDir . '/app/Http/Middleware/TrustProxies.php',
     'App\\Http\\Middleware\\VerifyCsrfToken' => $baseDir . '/app/Http/Middleware/VerifyCsrfToken.php',
+<<<<<<< HEAD
     'App\\PhongBan' => $baseDir . '/app/PhongBan.php',
+=======
+    'App\\Models\\Branch' => $baseDir . '/app/Models/Branch.php',
+>>>>>>> origin/create_chinhanh
     'App\\Providers\\AppServiceProvider' => $baseDir . '/app/Providers/AppServiceProvider.php',
     'App\\Providers\\AuthServiceProvider' => $baseDir . '/app/Providers/AuthServiceProvider.php',
     'App\\Providers\\BroadcastServiceProvider' => $baseDir . '/app/Providers/BroadcastServiceProvider.php',
@@ -129,6 +135,7 @@ return array(
     'Carbon\\Traits\\Units' => $vendorDir . '/nesbot/carbon/src/Carbon/Traits/Units.php',
     'Carbon\\Traits\\Week' => $vendorDir . '/nesbot/carbon/src/Carbon/Traits/Week.php',
     'Carbon\\Translator' => $vendorDir . '/nesbot/carbon/src/Carbon/Translator.php',
+<<<<<<< HEAD
     'Collective\\Html\\Componentable' => $vendorDir . '/laravelcollective/html/src/Componentable.php',
     'Collective\\Html\\Eloquent\\FormAccessible' => $vendorDir . '/laravelcollective/html/src/Eloquent/FormAccessible.php',
     'Collective\\Html\\FormBuilder' => $vendorDir . '/laravelcollective/html/src/FormBuilder.php',
@@ -137,6 +144,8 @@ return array(
     'Collective\\Html\\HtmlFacade' => $vendorDir . '/laravelcollective/html/src/HtmlFacade.php',
     'Collective\\Html\\HtmlServiceProvider' => $vendorDir . '/laravelcollective/html/src/HtmlServiceProvider.php',
     'Composer\\InstalledVersions' => $vendorDir . '/composer/InstalledVersions.php',
+=======
+>>>>>>> origin/create_chinhanh
     'Cron\\AbstractField' => $vendorDir . '/dragonmantank/cron-expression/src/Cron/AbstractField.php',
     'Cron\\CronExpression' => $vendorDir . '/dragonmantank/cron-expression/src/Cron/CronExpression.php',
     'Cron\\DayOfMonthField' => $vendorDir . '/dragonmantank/cron-expression/src/Cron/DayOfMonthField.php',
@@ -146,6 +155,7 @@ return array(
     'Cron\\HoursField' => $vendorDir . '/dragonmantank/cron-expression/src/Cron/HoursField.php',
     'Cron\\MinutesField' => $vendorDir . '/dragonmantank/cron-expression/src/Cron/MinutesField.php',
     'Cron\\MonthField' => $vendorDir . '/dragonmantank/cron-expression/src/Cron/MonthField.php',
+    'DatabaseBranch' => $baseDir . '/database/seeds/DatabaseBranch.php',
     'DatabaseSeeder' => $baseDir . '/database/seeds/DatabaseSeeder.php',
     'DeepCopy\\DeepCopy' => $vendorDir . '/myclabs/deep-copy/src/DeepCopy/DeepCopy.php',
     'DeepCopy\\Exception\\CloneException' => $vendorDir . '/myclabs/deep-copy/src/DeepCopy/Exception/CloneException.php',
@@ -3890,6 +3900,7 @@ return array(
     'Symfony\\Component\\EventDispatcher\\Debug\\TraceableEventDispatcher' => $vendorDir . '/symfony/event-dispatcher/Debug/TraceableEventDispatcher.php',
     'Symfony\\Component\\EventDispatcher\\Debug\\WrappedListener' => $vendorDir . '/symfony/event-dispatcher/Debug/WrappedListener.php',
     'Symfony\\Component\\EventDispatcher\\DependencyInjection\\AddEventAliasesPass' => $vendorDir . '/symfony/event-dispatcher/DependencyInjection/AddEventAliasesPass.php',
+    'Symfony\\Component\\EventDispatcher\\DependencyInjection\\ExtractingEventDispatcher' => $vendorDir . '/symfony/event-dispatcher/DependencyInjection/RegisterListenersPass.php',
     'Symfony\\Component\\EventDispatcher\\DependencyInjection\\RegisterListenersPass' => $vendorDir . '/symfony/event-dispatcher/DependencyInjection/RegisterListenersPass.php',
     'Symfony\\Component\\EventDispatcher\\EventDispatcher' => $vendorDir . '/symfony/event-dispatcher/EventDispatcher.php',
     'Symfony\\Component\\EventDispatcher\\EventDispatcherInterface' => $vendorDir . '/symfony/event-dispatcher/EventDispatcherInterface.php',
@@ -4259,6 +4270,7 @@ return array(
     'Symfony\\Component\\Routing\\Loader\\GlobFileLoader' => $vendorDir . '/symfony/routing/Loader/GlobFileLoader.php',
     'Symfony\\Component\\Routing\\Loader\\ObjectLoader' => $vendorDir . '/symfony/routing/Loader/ObjectLoader.php',
     'Symfony\\Component\\Routing\\Loader\\PhpFileLoader' => $vendorDir . '/symfony/routing/Loader/PhpFileLoader.php',
+    'Symfony\\Component\\Routing\\Loader\\ProtectedPhpFileLoader' => $vendorDir . '/symfony/routing/Loader/PhpFileLoader.php',
     'Symfony\\Component\\Routing\\Loader\\XmlFileLoader' => $vendorDir . '/symfony/routing/Loader/XmlFileLoader.php',
     'Symfony\\Component\\Routing\\Loader\\YamlFileLoader' => $vendorDir . '/symfony/routing/Loader/YamlFileLoader.php',
     'Symfony\\Component\\Routing\\Matcher\\CompiledUrlMatcher' => $vendorDir . '/symfony/routing/Matcher/CompiledUrlMatcher.php',

@@ -47,6 +47,22 @@
                             <span>Phòng Ban</span>
                         </a>
                     </li>
+
+                    <li>
+                        <a href="javascript:void(0);" class="menu-toggle">
+                            <i class="material-icons">business</i>
+                            <span>Chi nhánh</span>
+                        </a>
+                        <ul class="ml-menu">
+                            <li>
+                                <a href="{{url('branch')}}">Chi nhánh công ty</a>
+                            </li>
+                            <li>
+                                <a href="{{url('branch-employee')}}">Nhân viên</a>
+                            </li>
+                        </ul>
+                    </li>
+
                     <li>
                         <a href="pages/helper-classes.html">
                             <i class="material-icons">layers</i>
