@@ -7,7 +7,7 @@
                     <img src="{{asset('project_asset/images/user.png')}}" width="48" height="48" alt="User" />
                 </div>
                 <div class="info-container">
-                    <div class="name" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{{Auth::user()->username}}</div>
+                    <div class="name" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{{Auth::user()->name}}</div>
                     <div class="email">{{Auth::user()->email}}</div>
                     <div class="btn-group user-helper-dropdown">
                         <i class="material-icons" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">keyboard_arrow_down</i>
@@ -47,6 +47,22 @@
                             <span>Typography</span>
                         </a>
                     </li>
+
+                    <li>
+                        <a href="javascript:void(0);" class="menu-toggle">
+                            <i class="material-icons">business</i>
+                            <span>Chi nhánh</span>
+                        </a>
+                        <ul class="ml-menu">
+                            <li>
+                                <a href="{{url('branch')}}">Chi nhánh công ty</a>
+                            </li>
+                            <li>
+                                <a href="{{url('branch-employee')}}">Nhân viên</a>
+                            </li>
+                        </ul>
+                    </li>
+
                     <li>
                         <a href="pages/helper-classes.html">
                             <i class="material-icons">layers</i>

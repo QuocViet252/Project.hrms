@@ -20,7 +20,7 @@
         </div>
         <div class="card">
             <div class="body">
-                <form method="POST" action="{{ route('register') }}">
+                <form method="POST" action="{{ url('register') }}">
                     @csrf
                     <div class="msg">Register a new membership</div>
                     <div class="input-group">
@@ -41,7 +41,7 @@
                             <i class="material-icons">person</i>
                         </span>
                         <div class="form-line">
-                            <input id="name" type="text" class="form-control form-control-user @error('name') is-invalid @enderror" name="name" value="{{ old('name') }}" required autocomplete="name"  placeholder="Fullname" required autofocus>
+                            <input id="name" type="text" class="form-control form-control-user @error('name') is-invalid @enderror" name="name" value="{{ old('fullname') }}" required autocomplete="fullname"  placeholder="Fullname" required autofocus>
                             @error('name')
                                 <span class="invalid-feedback" role="alert">
                                     <strong>{{ $message }}</strong>
@@ -49,7 +49,7 @@
                             @enderror
                         </div>
                     </div>
-                    
+
                     <div class="input-group">
                         <span class="input-group-addon">
                             <i class="material-icons">email</i>
@@ -107,8 +107,8 @@
                     <button type="submit" class="btn btn-primary btn-user btn-block">
                                     {{ __('Register') }}
                                 </button>
-                    
-                    
+
+
                     <div class="m-t-25 m-b--5 align-center">
                         <a href="{{url('login')}}">You already have a membership?</a>
                     </div>

@@ -14,9 +14,26 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('auth.login');
 });
 
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+//branch
+Route::get('/branch', 'Branch\BranchController@index')->name('Branch');
+
+Route::get('/add-branch', 'Branch\BranchController@create')->name('Branch');
+Route::post('/add-branch', 'Branch\BranchController@store')->name('Branch');
+
+Route::get('/delete/{id}', 'Branch\BranchController@destroy')->name('delete');
+
+Route::get('/update/{id}', 'Branch\BranchController@edit')->name('update');
+Route::post('/update/{id}', 'Branch\BranchController@update')->name('update');
+
+//branch_employee
+Route::get('/branch-employee', 'Branch\BranchEmployeeController@index')->name('Branch');
+
+
+
